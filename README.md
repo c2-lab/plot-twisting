@@ -1,5 +1,5 @@
-# Attention Flows: Tracing LLM Conceptual Engagement via Story Summaries
+# Plot Twisting: Linearity and Uniformity in Literary Summaries
 
-This respository contains the data released alongside the paper "Attention Flows: Tracing LLM Conceptual Engagement via Story Summaries" by Rebecca M. M. Hicke, Sil Hamilton, David Mimno, and Ross Deans Kristensen-McLachlan.
+This respository contains the data released alongside the paper "Plot Twisting: Linearity and Uniformity in Literary Summaries" by Rebecca M. M. Hicke, Sil Hamilton, David Mimno, and Ross Deans Kristensen-McLachlan.
 
 All 150 novels analyzed in the paper are described in `book_dataset.csv`. The cleaned versions of each text, split into chapters, are in the `texts` folder. Each subfolder in `texts` represents a single novel and is named with the novel's Project Gutenberg ID. All section files are named `chapter-{n}.text` with `n` beginning at 1, even if the first text is a prologue. The summaries generated for each novel in response to each of the four prompts and by each of the nine models of interest are stored in `summaries`; there is one parquet file per model. The human summaries from Wikipedia are in `book_dataset.csv`. Summary sentence-to-chapter alignments produced by GPT-OSS (120b) are in the `alignments` folder, with a subfolder per 'author'.
